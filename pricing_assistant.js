@@ -7,7 +7,7 @@ let fixedMonthlyCosts = ("rent = $750");
 
 
 discountedPrice = basePrice * (1 - discountRate);
-finalPriceWithTax = 10.1075 * (1 + salesTaxRate);
+finalPriceWithTax = discountedPrice * (1 + salesTaxRate);
 profitPerUnit = finalPriceTax - costPerUnit;
 breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit);
 isProfitablePerUnit = (profitPerUnit > 0);
