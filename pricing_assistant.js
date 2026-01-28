@@ -6,11 +6,11 @@ let salesTaxRate = ("0.05");
 let fixedMonthlyCosts = ("rent = $750");
 
 
-discountedPrice = 15.55 * (1 - 0.35);
-finalPriceWithTax = 10.1075 * (1 + 0.5);
-profitPerUnit = 10.612875 - 13.75;
-breakEvenUnits = Math.ceil(750 / -3.137);
-isProfitablePerUnit = (-3.137 > 0);
+discountedPrice = basePrice * (1 - discountRate);
+finalPriceWithTax = 10.1075 * (1 + salesTaxRate);
+profitPerUnit = finalPriceTax - costPerUnit;
+breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit);
+isProfitablePerUnit = (profitPerUnit > 0);
 
 
 console.log(productName);
