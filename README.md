@@ -1,6 +1,6 @@
 
 /*
-Product Profitability Analysis – Coding Challenge
+Product Profitability Analysis 
 
 This program demonstrates the application of expressions, variables,
 and primitive data types within a realistic business context.
